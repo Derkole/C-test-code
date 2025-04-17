@@ -1,0 +1,11 @@
+#include <iostream>
+
+int main()
+{
+    std::cout << "Напиши число: ";
+    int number{};
+    std::cin >> number;
+    int number2 = 2*number;
+    std::cout << "Удвоиное число: " << number2;
+    return 0;
+}
