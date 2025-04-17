@@ -5,7 +5,10 @@ int main()
     std::cout << "Напиши число: ";
     int number{};
     std::cin >> number;
-    int number2 = 2*number;
-    std::cout << "Удвоиное число: " << number2;
+
+    std::cout << "Ваше число: " << number << '\n';
+    std::cout << "Удвоиное число: " << number * 2 << '\n';
+    std::cout << "Утроенное число: " << number * 3;
+
     return 0;
 }
