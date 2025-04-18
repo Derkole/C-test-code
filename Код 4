@@ -1,0 +1,18 @@
+#include <iostream>
+
+int doubleNumber(int a)
+{
+    return a * 2; 
+}
+
+int main()
+{
+    int num;          
+    std::cout << "Enter a number: "; 
+    std::cin >> num;              
+
+    int result = doubleNumber(num);
+
+    std::cout << "Doubled number is: " << doubleNumber(num);
+    return 0;
+}
