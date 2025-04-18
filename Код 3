@@ -1,0 +1,19 @@
+#include <iostream>
+
+int maxOfThree(int a, int b, int c)
+{ if (a >= b && a >= c) {return a;}
+else if (b >= a && b >= c) {return b;}
+else {return c;}
+}
+
+int main() 
+{
+int a, b, c;
+
+std::cout << "Напиши 3 числа и я выберу наибольшее из них: ";
+std::cin >> a >> b >> c;
+
+int result = maxOfThree(a, b, c);
+std::cout << "Наибольшее число из предложенных: " << result;
+return 0;
+}
