@@ -1,0 +1,33 @@
+#include <iostream>
+
+int main()
+{
+    // Создается smaller, larger
+    std::cout << "Введите целое число: \n";
+    int smaller{};
+    std::cin >> smaller;
+
+    std::cout << "Введите большее целое число: \n";
+    int larger{};
+    std::cin >> larger;
+
+    if (smaller < larger)
+    {
+        std::cout << "Меньшее значение равно: " << smaller << '\n';
+        std::cout << "Большее значение равно: " << larger << '\n';
+    }
+    else
+    {
+        // Создается temp
+        int temp = smaller;
+        smaller = larger;
+        larger = temp;
+        
+
+        std::cout << "Меняем местами значения\n";
+        std::cout << "Меньшее значение равно: " << smaller << '\n';
+        std::cout << "Большее значение равно: " << larger << '\n';
+    }// temp уничтожается здесь
+
+    return 0;
+}// Уничтожаются smaller, larger
